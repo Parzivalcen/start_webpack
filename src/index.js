@@ -1,6 +1,6 @@
 import _ from "lodash";
 import printMe from './print.js';
-import myName from "./myName.js";
+import {myName} from "./myName.js";
 
 function component() {
   const element = document.createElement("div");
@@ -10,6 +10,11 @@ function component() {
 
   btn.innerHTML = 'Click to see a cool thing in the console';
   
+  // btn.onclick = myName('david');
+  // Function with argument need's event listener
+  document.addEventListener('click', () => {
+    myName('david')
+  })
   btn.onclick = printMe;
 
   element.appendChild(btn)

@@ -6,7 +6,8 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    print: './src/print.js'
+    print: './src/print.js',
+    myName: './src/myName.js'
   },
   plugins:[
     new HtmlWebpackPlugin({
@@ -16,5 +17,6 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 };
