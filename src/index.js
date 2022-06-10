@@ -13,7 +13,7 @@ function component() {
   // btn.onclick = myName('david');
   // Function with argument need's event listener
   document.addEventListener('click', () => {
-    myName('david')
+    myName('Juan')
   })
   btn.onclick = printMe;
 
